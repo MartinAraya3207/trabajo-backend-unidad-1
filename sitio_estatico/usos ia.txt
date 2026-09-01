@@ -1,0 +1,32 @@
+Inteligencia utilizada = Claude en su modelo sonnet 5 medio y la ia de visual studio code
+
+
+(a la IA se le entrego los documentos que se permitían revisar para la evaluación para si ver que cosas me faltan y cuales errores tenia)
+
+revisa los avances de mi trabajo y dime que le falta en base a lo que piden los documentos y al work entregado
+
+Información recibida:
+"Revisé el zip (sitio_estatico/), las 4 guías y la pauta de evaluación (con su rúbrica). Buena noticia: la base (proyecto Django creado, app mi_app, HTML/CSS/Bootstrap del caso NexoDigital) está ahí. Mala noticia: casi ningún requisito de la rúbrica está implementado todavía, y hay bugs que impiden que el servidor levante."
+
+(Tuve que empezar de cero algunas partes por errores al momento de iniciar)
+
+Dame el código  arreglado, pero que sea de estilo ejemplo usando otro trabajo de tu agrado para usar de referencia en cada uno pero sin cambiar los archivos como los que se encuentran en env ni la mayoría
+
+Información recibida:
+
+Ahora reviso el index.html completo y lo reconstruyo de otra forma diferente como ejemplo para el resto del bloque hero (ya vi el inicio) y css/style.css.
+
+la ia de copilot que viene con el visual es por un error que daba al hacer "python manage.py runserver"
+
+promp: que hacer cuando hago python manage.py runserver me da error y no me abre el host?
+
+Resultado de la IA, reviso el trabajo completo y cambio el nombre por el que venia por defecto ósea "SITIO_ESTATICO" a "sitio_estatico" (esto se debe a que al momento de descomprimir el archivo mi laptop cambio el nombre de mayúscula a minúscula)
+
+
+Mediante Claude le pase el trabajo realizado y le pregunte que tal se veía con la pauta que se me entrego
+
+Resultado: 
+Ejecutó 3 comandos, visualizó un archivo
+Leí la pauta completa (rúbrica de 10 criterios, 10% c/u). Comparé tu proyecto (v2 Django) contra cada uno, usando el sitio estático original (v1) como el "enunciado" que dice el punto 1 que hay que reproducir con "el mismo contenido".
+
+Con lo que está hoy: 9 criterios en Destacado + 1 en Habilitado ≈ 93-97 puntos, lo que en la escala de la pauta cae en nota ≈ 6.5–6.8. Es un resultado muy bueno, pero hay dos cosas puntuales que te pueden bajar puntos si el profesor las nota o las prueba en la defensa:

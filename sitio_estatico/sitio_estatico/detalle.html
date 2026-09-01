@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}{{ servicio.nombre }} · NexoDigital Soluciones{% endblock %}
+{% block nav_servicios %}active{% endblock %}
+
+{% block content %}
+<header class="tn-detail-header">
+  <div class="container">
+    <p class="mb-1"><a href="{% url 'servicios' %}" class="text-white-50 text-decoration-none">&larr; Volver a servicios</a></p>
+    <h1>{{ servicio.nombre }}</h1>
+    <p class="mb-0 fs-5">{{ servicio.resumen }}</p>
+  </div>
+</header>
+
+<section class="container py-5">
+  <div class="row g-5">
+    <div class="col-lg-8">
+      <h3>Descripción del servicio</h3>
+      <p>{{ servicio.descripcion }}</p>
+      <h4 class="mt-4">Qué incluye</h4>
+      <ul class="tn-feature-list list-unstyled">
+        {% for caracteristica in servicio.caracteristicas %}
+          <li>{{ caracteristica }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-lg-4">
+      <div class="tn-price-box">
+        <p class="text-muted mb-1">Servicio N&deg; {{ servicio.id }}</p>
+        <p class="tn-price mb-1">{{ servicio.precio }}</p>
+        <p class="text-muted">Plazo estimado: {{ servicio.duracion }}</p>
+        <a href="{% url 'contacto' %}" class="btn btn-primary w-100 mt-2">Solicitar cotización</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

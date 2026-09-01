@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Servicios · NexoDigital Soluciones{% endblock %}
+{% block nav_servicios %}active{% endblock %}
+
+{% block content %}
+<header class="tn-detail-header">
+  <div class="container">
+    <h1>Nuestros servicios</h1>
+    <p class="mb-0 fs-5">Soluciones tecnológicas pensadas para pequeñas y medianas empresas.</p>
+  </div>
+</header>
+
+<section class="container py-5">
+  <div class="row g-4">
+    {% for servicio in servicios %}
+      <div class="col-md-6 col-lg-3">
+        <div class="card tn-card p-3 position-relative">
+          <h5 class="card-title">{{ servicio.nombre }}</h5>
+          <p class="card-text text-muted">{{ servicio.resumen }}</p>
+          <a href="{% url 'detalle_servicio' id=servicio.id %}" class="stretched-link fw-semibold">Ver detalle &rarr;</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
